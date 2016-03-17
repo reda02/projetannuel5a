@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="associationModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'association.dbo.Adherent' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="Adherent">
+    <Key>
+      <PropertyRef Name="IDAdherent" />
+      <PropertyRef Name="IDCoord" />
+    </Key>
+    <Property Name="IDAdherent" Type="int" Nullable="false" />
+    <Property Name="IDCoord" Type="int" Nullable="false" />
+    <Property Name="VilOrig" Type="nvarchar" MaxLength="30" />
+    <Property Name="Genre" Type="nvarchar" MaxLength="15" />
+    <Property Name="Nom" Type="nvarchar" MaxLength="35" />
+    <Property Name="Prenom" Type="nvarchar" MaxLength="35" />
+    <Property Name="Naissance" Type="datetime" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="255" />
+    <Property Name="SituatFam" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6013: Aucune clé primaire n'est définie pour la table/vue 'association.dbo.Adherents qui ne sont pas à jour' ; en outre, aucune clé primaire valide n'a pu être déduite. Cette table/vue a été exclue. Pour utiliser l'entité, vous devez passer en revue votre schéma, ajouter les clés appropriées et supprimer le commentaire associé.
+        <EntityType Name="Adherents qui ne sont pas à jour">
+          <Property Name="IDAdherent" Type="int" />
+          <Property Name="VilOrig" Type="nvarchar" MaxLength="30" />
+          <Property Name="Genre" Type="nvarchar" MaxLength="15" />
+          <Property Name="Nom" Type="nvarchar" MaxLength="35" />
+          <Property Name="Prenom" Type="nvarchar" MaxLength="35" />
+          <Property Name="SituatFam" Type="nvarchar" MaxLength="15" />
+          <Property Name="AnneeCotis" Type="nvarchar" MaxLength="4" />
+          <Property Name="Montant" Type="money" />
+          <Property Name="TelFixe" Type="nvarchar" MaxLength="14" />
+          <Property Name="Portable" Type="nvarchar" MaxLength="14" />
+        </EntityType>-->
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'association.dbo.Conjoint' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="Conjoint">
+    <Key>
+      <PropertyRef Name="IDConj" />
+    </Key>
+    <Property Name="IDConj" Type="int" Nullable="false" />
+    <Property Name="IDAdherent" Type="int" />
+    <Property Name="Genre" Type="nvarchar" MaxLength="15" />
+    <Property Name="Nom" Type="nvarchar" MaxLength="25" />
+    <Property Name="Prenom" Type="nvarchar" MaxLength="25" />
+    <Property Name="Naissance" Type="datetime" />
+    <Property Name="VOrig" Type="nvarchar" MaxLength="30" />
+    <Property Name="Portable" Type="nvarchar" MaxLength="14" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="40" />
+    <Property Name="photo2" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'association.dbo.Coordonnees' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="Coordonnees">
+    <Key>
+      <PropertyRef Name="IDCoord" />
+    </Key>
+    <Property Name="IDCoord" Type="int" Nullable="false" />
+    <Property Name="IDAdherent" Type="int" />
+    <Property Name="Adresse" Type="nvarchar" MaxLength="60" />
+    <Property Name="CP" Type="nvarchar" MaxLength="5" />
+    <Property Name="Ville" Type="nvarchar" MaxLength="45" />
+    <Property Name="TelFixe" Type="nvarchar" MaxLength="14" />
+    <Property Name="Portable" Type="nvarchar" MaxLength="14" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="45" />
+    <Property Name="Commentaires" Type="nvarchar(max)" />
+    <Property Name="Adresse2" Type="nvarchar" MaxLength="60" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'association.dbo.Cotisation' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="Cotisation">
+    <Key>
+      <PropertyRef Name="IDCotis" />
+    </Key>
+    <Property Name="IDCotis" Type="int" Nullable="false" />
+    <Property Name="IDAdherent" Type="int" />
+    <Property Name="AnneeCotis" Type="nvarchar" MaxLength="4" />
+    <Property Name="Montant" Type="money" />
+    <Property Name="ModePaie" Type="nvarchar" MaxLength="30" />
+    <Property Name="Commentaires" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'association.dbo.Enfants' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="Enfants">
+    <Key>
+      <PropertyRef Name="NumEnf" />
+    </Key>
+    <Property Name="NumEnf" Type="int" Nullable="false" />
+    <Property Name="IDConj" Type="int" />
+    <Property Name="IDAdherent" Type="int" />
+    <Property Name="Nom" Type="nvarchar" MaxLength="25" />
+    <Property Name="Prenom" Type="nvarchar" MaxLength="25" />
+    <Property Name="Naissance" Type="datetime" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6013: Aucune clé primaire n'est définie pour la table/vue 'association.dbo.Somme cotisée par village et par année' ; en outre, aucune clé primaire valide n'a pu être déduite. Cette table/vue a été exclue. Pour utiliser l'entité, vous devez passer en revue votre schéma, ajouter les clés appropriées et supprimer le commentaire associé.
+        <EntityType Name="Somme cotisée par village et par année">
+          <Property Name="VilOrig" Type="nvarchar" MaxLength="30" />
+          <Property Name="AnneeCotis" Type="nvarchar" MaxLength="4" />
+          <Property Name="SommeDeMontant1" Type="money" />
+        </EntityType>-->
+  <EntityType Name="Table_1">
+    <Key>
+      <PropertyRef Name="test" />
+    </Key>
+    <Property Name="test" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="test2" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'association.dbo.Villages de la région' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="Villages de la région">
+    <Key>
+      <PropertyRef Name="NumVillage" />
+    </Key>
+    <Property Name="NumVillage" Type="int" Nullable="false" />
+    <Property Name="Villages" Type="nvarchar" MaxLength="35" />
+  </EntityType>
+  <EntityContainer Name="associationModel1StoreContainer">
+    <EntitySet Name="Table_1" EntityType="Self.Table_1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Adherent" EntityType="Self.Adherent" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Adherent].[IDAdherent] AS [IDAdherent], 
+    [Adherent].[IDCoord] AS [IDCoord], 
+    [Adherent].[VilOrig] AS [VilOrig], 
+    [Adherent].[Genre] AS [Genre], 
+    [Adherent].[Nom] AS [Nom], 
+    [Adherent].[Prenom] AS [Prenom], 
+    [Adherent].[Naissance] AS [Naissance], 
+    [Adherent].[Photo] AS [Photo], 
+    [Adherent].[SituatFam] AS [SituatFam]
+    FROM [dbo].[Adherent] AS [Adherent]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Conjoint" EntityType="Self.Conjoint" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Conjoint].[IDConj] AS [IDConj], 
+    [Conjoint].[IDAdherent] AS [IDAdherent], 
+    [Conjoint].[Genre] AS [Genre], 
+    [Conjoint].[Nom] AS [Nom], 
+    [Conjoint].[Prenom] AS [Prenom], 
+    [Conjoint].[Naissance] AS [Naissance], 
+    [Conjoint].[VOrig] AS [VOrig], 
+    [Conjoint].[Portable] AS [Portable], 
+    [Conjoint].[Mail] AS [Mail], 
+    [Conjoint].[photo2] AS [photo2]
+    FROM [dbo].[Conjoint] AS [Conjoint]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Coordonnees" EntityType="Self.Coordonnees" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Coordonnees].[IDCoord] AS [IDCoord], 
+    [Coordonnees].[IDAdherent] AS [IDAdherent], 
+    [Coordonnees].[Adresse] AS [Adresse], 
+    [Coordonnees].[CP] AS [CP], 
+    [Coordonnees].[Ville] AS [Ville], 
+    [Coordonnees].[TelFixe] AS [TelFixe], 
+    [Coordonnees].[Portable] AS [Portable], 
+    [Coordonnees].[Mail] AS [Mail], 
+    [Coordonnees].[Commentaires] AS [Commentaires], 
+    [Coordonnees].[Adresse2] AS [Adresse2]
+    FROM [dbo].[Coordonnees] AS [Coordonnees]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Cotisation" EntityType="Self.Cotisation" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Cotisation].[IDCotis] AS [IDCotis], 
+    [Cotisation].[IDAdherent] AS [IDAdherent], 
+    [Cotisation].[AnneeCotis] AS [AnneeCotis], 
+    [Cotisation].[Montant] AS [Montant], 
+    [Cotisation].[ModePaie] AS [ModePaie], 
+    [Cotisation].[Commentaires] AS [Commentaires]
+    FROM [dbo].[Cotisation] AS [Cotisation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Enfants" EntityType="Self.Enfants" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Enfants].[NumEnf] AS [NumEnf], 
+    [Enfants].[IDConj] AS [IDConj], 
+    [Enfants].[IDAdherent] AS [IDAdherent], 
+    [Enfants].[Nom] AS [Nom], 
+    [Enfants].[Prenom] AS [Prenom], 
+    [Enfants].[Naissance] AS [Naissance]
+    FROM [dbo].[Enfants] AS [Enfants]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Villages de la région" EntityType="Self.Villages de la région" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Villages de la région].[NumVillage] AS [NumVillage], 
+    [Villages de la région].[Villages] AS [Villages]
+    FROM [dbo].[Villages de la région] AS [Villages de la région]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

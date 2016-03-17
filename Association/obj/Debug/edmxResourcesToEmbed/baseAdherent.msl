@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="associationModel1StoreContainer" CdmEntityContainer="associationEntities1">
+    <EntitySetMapping Name="Table_1">
+      <EntityTypeMapping TypeName="associationModel1.Table_1">
+        <MappingFragment StoreEntitySet="Table_1">
+          <ScalarProperty Name="test" ColumnName="test" />
+          <ScalarProperty Name="test2" ColumnName="test2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adherent">
+      <EntityTypeMapping TypeName="associationModel1.Adherent">
+        <MappingFragment StoreEntitySet="Adherent">
+          <ScalarProperty Name="IDAdherent" ColumnName="IDAdherent" />
+          <ScalarProperty Name="IDCoord" ColumnName="IDCoord" />
+          <ScalarProperty Name="VilOrig" ColumnName="VilOrig" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Naissance" ColumnName="Naissance" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="SituatFam" ColumnName="SituatFam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conjoint">
+      <EntityTypeMapping TypeName="associationModel1.Conjoint">
+        <MappingFragment StoreEntitySet="Conjoint">
+          <ScalarProperty Name="IDConj" ColumnName="IDConj" />
+          <ScalarProperty Name="IDAdherent" ColumnName="IDAdherent" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Naissance" ColumnName="Naissance" />
+          <ScalarProperty Name="VOrig" ColumnName="VOrig" />
+          <ScalarProperty Name="Portable" ColumnName="Portable" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="photo2" ColumnName="photo2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coordonnees">
+      <EntityTypeMapping TypeName="associationModel1.Coordonnees">
+        <MappingFragment StoreEntitySet="Coordonnees">
+          <ScalarProperty Name="IDCoord" ColumnName="IDCoord" />
+          <ScalarProperty Name="IDAdherent" ColumnName="IDAdherent" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="Ville" ColumnName="Ville" />
+          <ScalarProperty Name="TelFixe" ColumnName="TelFixe" />
+          <ScalarProperty Name="Portable" ColumnName="Portable" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Commentaires" ColumnName="Commentaires" />
+          <ScalarProperty Name="Adresse2" ColumnName="Adresse2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cotisation">
+      <EntityTypeMapping TypeName="associationModel1.Cotisation">
+        <MappingFragment StoreEntitySet="Cotisation">
+          <ScalarProperty Name="IDCotis" ColumnName="IDCotis" />
+          <ScalarProperty Name="IDAdherent" ColumnName="IDAdherent" />
+          <ScalarProperty Name="AnneeCotis" ColumnName="AnneeCotis" />
+          <ScalarProperty Name="Montant" ColumnName="Montant" />
+          <ScalarProperty Name="ModePaie" ColumnName="ModePaie" />
+          <ScalarProperty Name="Commentaires" ColumnName="Commentaires" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enfants">
+      <EntityTypeMapping TypeName="associationModel1.Enfants">
+        <MappingFragment StoreEntitySet="Enfants">
+          <ScalarProperty Name="NumEnf" ColumnName="NumEnf" />
+          <ScalarProperty Name="IDConj" ColumnName="IDConj" />
+          <ScalarProperty Name="IDAdherent" ColumnName="IDAdherent" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Naissance" ColumnName="Naissance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Villages_de_la_région">
+      <EntityTypeMapping TypeName="associationModel1.Villages_de_la_région">
+        <MappingFragment StoreEntitySet="Villages de la région">
+          <ScalarProperty Name="NumVillage" ColumnName="NumVillage" />
+          <ScalarProperty Name="Villages" ColumnName="Villages" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

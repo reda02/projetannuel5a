@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NotAClue.Web.UI.BootstrapWebControls</id>
+    <version>0.1.5</version>
+    <title>NotAClue Bootstrap Freindly WebForms Controls</title>
+    <authors>sjnaughton</authors>
+    <owners>sjnaughton</owners>
+    <licenseUrl>https://bootstrapfriendlywebcontrols.codeplex.com/license</licenseUrl>
+    <iconUrl>http://s414903586.websitehome.co.uk/Icons/bootstrap-friendly.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a set of Web Controls to enable easy integration with Bootstrap</description>
+    <summary>NotAClue Bootstrap Freindly WebForms Controls</summary>
+    <releaseNotes>Added the BootstrapMenu web control.
+Added BootstrapTabs control.
+Now supports Bootstrap 3.x
+Added dependancy on jQuery Cookie.
+Now clears cookie on page load when not a post-back.</releaseNotes>
+    <copyright>Stephen J Naughton 2014</copyright>
+    <tags>Bootstrap DynamicData WebForms</tags>
+    <dependencies>
+      <dependency id="bootstrap" version="3.2.0" />
+      <dependency id="jquery.cookie" version="1.4.0" />
+    </dependencies>
+  </metadata>
+</package>
