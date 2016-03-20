@@ -10,7 +10,7 @@
 namespace Association.Gestion_des_Adhérents {
     
     
-    public partial class listAdh {
+    public partial class listCouples {
         
         /// <summary>
         /// Contrôle Calendar1.
@@ -20,15 +20,6 @@ namespace Association.Gestion_des_Adhérents {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
-        
-        /// <summary>
-        /// Contrôle iddatenaissance.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox iddatenaissance;
         
         /// <summary>
         /// Contrôle Button1.

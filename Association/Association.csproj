@@ -261,12 +261,26 @@
     <Compile Include="Gestion des Adhérents\listAdh.aspx.designer.cs">
       <DependentUpon>listAdh.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Gestion des Adhérents\listadherentAsp.aspx.cs">
-      <DependentUpon>listadherentAsp.aspx</DependentUpon>
+    <Compile Include="Gestion des Adhérents\listCelib.aspx.cs">
+      <DependentUpon>listCelib.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Gestion des Adhérents\listadherentAsp.aspx.designer.cs">
-      <DependentUpon>listadherentAsp.aspx</DependentUpon>
+    <Compile Include="Gestion des Adhérents\listCelib.aspx.designer.cs">
+      <DependentUpon>listCelib.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion des Adhérents\listCouples.aspx.cs">
+      <DependentUpon>listCouples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion des Adhérents\listCouples.aspx.designer.cs">
+      <DependentUpon>listCouples.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion des Adhérents\listEnfants.aspx.cs">
+      <DependentUpon>listEnfants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion des Adhérents\listEnfants.aspx.designer.cs">
+      <DependentUpon>listEnfants.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -309,10 +323,10 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Gestion des Adhérents\listAdh.aspx" />
-    <Content Include="Gestion des Adhérents\listadherentAsp.aspx" />
-    <Content Include="Gestion des Adhérents\listedesardherent.html" />
+    <Content Include="Gestion des Adhérents\listCelib.aspx" />
+    <Content Include="Gestion des Adhérents\listCouples.aspx" />
+    <Content Include="Gestion des Adhérents\listEnfants.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="home.aspx" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
@@ -366,6 +380,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="home.aspx" />
     <Content Include="pageMaitre\association.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -420,8 +435,6 @@
     <Folder Include="archivage\" />
     <Folder Include="Espace de d’échange\" />
     <Folder Include="Gestion rappel de cotisation\" />
-    <Folder Include="NewFolder1 - Copier %285%29\" />
-    <Folder Include="NewFolder1 - Copier %286%29\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

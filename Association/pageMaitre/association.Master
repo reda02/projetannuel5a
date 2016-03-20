@@ -27,29 +27,33 @@
     <script src="../Scripts/bootstrap.min.js"></script> 
 </head>
 <body>
-    test
  
     <div>
             <nav class="navbar navbar-default" role="navigation">
   <div class="collapse navbar-collapse" id="oNavigation">
     <ul class="nav navbar-nav">
       <li><a href="../../home.aspx">Accueil</a></li>
-      <li class="dropdown">
+      <!--<li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Section A <b class="caret"></b> </a>
         <ul class="dropdown-menu">
           <li><a href="#">Deuxième niveau</a></li>
         </ul>
-      </li>
+      </li>-->
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion des Adherents<b class="caret"></b> </a>
         <ul class="dropdown-menu">
           <li class="dropdown-submenu">
                <a tabindex="-1" href="#">Adherent</a>
               <ul class="dropdown-menu">
-              <li><a href="Gestion des Adhérents/listadherentAsp.aspx">liste de tous les adherents</a></li>
-              </ul>              
+              <li><a runat="server" href="~/Gestion des Adhérents/listAdh.aspx">liste de tous les adherents</a></li>
+              <li><a runat="server" href="~/Gestion des Adhérents/listCelib.aspx">liste de tous les Célibataires</a></li>
+              <li><a runat="server" href="~/Gestion des Adhérents/listCouples.aspx">liste de tous les Couples</a></li>
+              <li><a runat="server" href="~/Gestion des Adhérents/listEnfants.aspx">liste de tous des Enfants</a></li>
+
+
+              </ul>             
           </li>
-          <li class="dropdown-submenu">
+          <!--<li class="dropdown-submenu">
             <a tabindex="-1" href="#">Sous-section</a>
             <ul class="dropdown-menu">
               <li><a href="#">Troisième niveau</a></li>
@@ -67,8 +71,10 @@
                 </ul>
               </li>
             </ul>
-          </li>
-          <li><a href="#">Deuxième niveau</a></li>
+          </li>-->
+         <!-- <li>
+             <a href="#">Deuxième niveau</a>
+             </li>-->
         </ul>
       </li>
     </ul>

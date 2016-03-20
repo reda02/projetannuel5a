@@ -1,10 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pageMaitre/association.Master" AutoEventWireup="true" CodeBehind="listAdh.aspx.cs" Inherits="Association.Gestion_des_Adhérents.listAdh" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pageMaitre/association.Master" AutoEventWireup="true" CodeBehind="listCelib.aspx.cs" Inherits="Association.Gestion_des_Adhérents.listCelib" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <form method="post" runat="server">
-&nbsp;<input type="submit" value="Envoyer"/>
+            <form method="post" runat="server">
+ 
+<input type="submit" value="Envoyer"/>
  
    <div class="form-group">
                 
@@ -19,6 +20,7 @@
                         <TitleStyle BackColor="#333399" BorderStyle="Solid" Font-Bold="True" Font-Size="12pt" ForeColor="White" Height="12pt" />
                         <TodayDayStyle BackColor="#999999" ForeColor="White" />
                     </asp:Calendar>
+                     
                 </div>
             </div>
           
@@ -51,5 +53,6 @@
 
 
     </form>
-    
+
+
 </asp:Content>
