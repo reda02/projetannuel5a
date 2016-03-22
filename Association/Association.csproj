@@ -254,6 +254,13 @@
     <Compile Include="Enfants.cs">
       <DependentUpon>baseAdherent.tt</DependentUpon>
     </Compile>
+    <Compile Include="Gestion des Adhérents\cotisationAdherent.aspx.cs">
+      <DependentUpon>cotisationAdherent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion des Adhérents\cotisationAdherent.aspx.designer.cs">
+      <DependentUpon>cotisationAdherent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Gestion des Adhérents\listAdh.aspx.cs">
       <DependentUpon>listAdh.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,6 +288,13 @@
     </Compile>
     <Compile Include="Gestion des Adhérents\listEnfants.aspx.designer.cs">
       <DependentUpon>listEnfants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion des Adhérents\rechercheAvecNumero.aspx.cs">
+      <DependentUpon>rechercheAvecNumero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion des Adhérents\rechercheAvecNumero.aspx.designer.cs">
+      <DependentUpon>rechercheAvecNumero.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -322,10 +336,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Gestion des Adhérents\cotisationAdherent.aspx" />
     <Content Include="Gestion des Adhérents\listAdh.aspx" />
     <Content Include="Gestion des Adhérents\listCelib.aspx" />
     <Content Include="Gestion des Adhérents\listCouples.aspx" />
     <Content Include="Gestion des Adhérents\listEnfants.aspx" />
+    <Content Include="Gestion des Adhérents\rechercheAvecNumero.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />

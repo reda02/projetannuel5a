@@ -21,6 +21,8 @@
                         <TitleStyle BackColor="#333399" BorderStyle="Solid" Font-Bold="True" Font-Size="12pt" ForeColor="White" Height="12pt" />
                         <TodayDayStyle BackColor="#999999" ForeColor="White" />
                     </asp:Calendar> 
+                    <asp:Button OnClick="Button1_Click" ID="Button1" runat="server" Text="Button" />
+
                 </div>
             </div>
           

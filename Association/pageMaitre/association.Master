@@ -45,15 +45,24 @@
           <li class="dropdown-submenu">
                <a tabindex="-1" href="#">Adherent</a>
               <ul class="dropdown-menu">
-              <li><a runat="server" href="~/Gestion des Adhérents/listAdh.aspx">liste de tous les adherents</a></li>
+             
+                <li class="dropdown-submenu">
+                <a href="#">Affichage Liste</a>
+                <ul class="dropdown-menu">
+                     <li><a runat="server" href="~/Gestion des Adhérents/listAdh.aspx">liste de tous les adherents</a></li>
               <li><a runat="server" href="~/Gestion des Adhérents/listCelib.aspx">liste de tous les Célibataires</a></li>
               <li><a runat="server" href="~/Gestion des Adhérents/listCouples.aspx">liste de tous les Couples</a></li>
               <li><a runat="server" href="~/Gestion des Adhérents/listEnfants.aspx">liste de tous des Enfants</a></li>
-
+              <li><a runat="server" href="~/Gestion des Adhérents/cotisationAdherent.aspx">liste Coordonnées des adherents</a></li> 
+                </ul>
+              </li>
+                  <li>
+                      <a  runat="server" href="~/Gestion des Adhérents/rechercheAvecNumero.aspx">Rechercher un adherent avec le numero</a>
+                  </li>
 
               </ul>             
           </li>
-          <!--<li class="dropdown-submenu">
+          <li class="dropdown-submenu">
             <a tabindex="-1" href="#">Sous-section</a>
             <ul class="dropdown-menu">
               <li><a href="#">Troisième niveau</a></li>
@@ -71,7 +80,7 @@
                 </ul>
               </li>
             </ul>
-          </li>-->
+          </li>
          <!-- <li>
              <a href="#">Deuxième niveau</a>
              </li>-->
