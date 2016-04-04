@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="associationModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Table_1">
+    <Key>
+      <PropertyRef Name="test" />
+    </Key>
+    <Property Name="test" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="test2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="testphoto" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Adherent">
+    <Key>
+      <PropertyRef Name="IDAdherent" />
+      <PropertyRef Name="IDCoord" />
+    </Key>
+    <Property Name="IDAdherent" Type="Int32" Nullable="false" />
+    <Property Name="IDCoord" Type="Int32" Nullable="false" />
+    <Property Name="VilOrig" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Genre" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Nom" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="Naissance" Type="DateTime" Precision="3" />
+    <Property Name="Photo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SituatFam" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Conjoint">
+    <Key>
+      <PropertyRef Name="IDConj" />
+    </Key>
+    <Property Name="IDConj" Type="Int32" Nullable="false" />
+    <Property Name="IDAdherent" Type="Int32" />
+    <Property Name="Genre" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Nom" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Naissance" Type="DateTime" Precision="3" />
+    <Property Name="VOrig" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Portable" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="photo2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Coordonnees">
+    <Key>
+      <PropertyRef Name="IDCoord" />
+    </Key>
+    <Property Name="IDCoord" Type="Int32" Nullable="false" />
+    <Property Name="IDAdherent" Type="Int32" />
+    <Property Name="Adresse" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="CP" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Ville" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="TelFixe" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="Portable" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="Commentaires" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Adresse2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Cotisation">
+    <Key>
+      <PropertyRef Name="IDCotis" />
+    </Key>
+    <Property Name="IDCotis" Type="Int32" Nullable="false" />
+    <Property Name="IDAdherent" Type="Int32" />
+    <Property Name="AnneeCotis" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="Montant" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ModePaie" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Commentaires" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Enfants">
+    <Key>
+      <PropertyRef Name="NumEnf" />
+    </Key>
+    <Property Name="NumEnf" Type="Int32" Nullable="false" />
+    <Property Name="IDConj" Type="Int32" />
+    <Property Name="IDAdherent" Type="Int32" />
+    <Property Name="Nom" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Naissance" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Villages_de_la_région">
+    <Key>
+      <PropertyRef Name="NumVillage" />
+    </Key>
+    <Property Name="NumVillage" Type="Int32" Nullable="false" />
+    <Property Name="Villages" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="associationEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Table_1" EntityType="Self.Table_1" />
+    <EntitySet Name="Adherent" EntityType="Self.Adherent" />
+    <EntitySet Name="Conjoint" EntityType="Self.Conjoint" />
+    <EntitySet Name="Coordonnees" EntityType="Self.Coordonnees" />
+    <EntitySet Name="Cotisation" EntityType="Self.Cotisation" />
+    <EntitySet Name="Enfants" EntityType="Self.Enfants" />
+    <EntitySet Name="Villages_de_la_région" EntityType="Self.Villages_de_la_région" />
+  </EntityContainer>
+</Schema>

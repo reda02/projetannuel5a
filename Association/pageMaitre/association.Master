@@ -9,7 +9,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-
+    
 
     <style>
         .dropdown-submenu{position:relative;}
@@ -27,10 +27,10 @@
     <script src="../Scripts/bootstrap.min.js"></script> 
 </head>
 <body>
- 
+   <form method="post" runat="server">
     <div>
             <nav class="navbar navbar-default" role="navigation">
-  <div class="collapse navbar-collapse" id="oNavigation">
+  <div class="collapse navbar-collapse" id="oNavigation" style="float:left">
     <ul class="nav navbar-nav">
       <li><a href="../../home.aspx">Accueil</a></li>
       <!--<li class="dropdown">
@@ -56,9 +56,28 @@
               <li><a runat="server" href="~/Gestion des Adhérents/cotisationAdherent.aspx">liste Coordonnées des adherents</a></li> 
                 </ul>
               </li>
-                  <li>
-                      <a  runat="server" href="~/Gestion des Adhérents/rechercheAvecNumero.aspx">Rechercher un adherent avec le numero</a>
+                  <li class="dropdown-submenu">
+                      <a  runat="server" href="#">Recherche</a>
+
+                          
+                    <ul class="dropdown-menu">
+                         <li><a runat="server" href="~/Gestion des Adhérents/rechercheAvecNumero.aspx">Rechercher un adherent avec le numero</a></li>
+                         <li><a runat="server" href="~/Gestion des Adhérents/rechercheAderentNom.aspx">Rechercher un adherent avec le Nom</a></li>
+                    </ul>
                   </li>
+
+                 
+                 
+                   <li class="dropdown-submenu">
+                      <a  runat="server" href="#">Mise a jour</a>
+
+                          
+                    <ul class="dropdown-menu">
+                         <li> <a  runat="server" href="~/Gestion des Adhérents/supprimerAdherent.aspx">Mise a jour  adherent</a></li>
+                         <li><a  runat="server" href="~/Gestion des Adhérents/village.aspx">Mise a jour  village</a></li>
+                    </ul>
+                  </li>
+
 
               </ul>             
           </li>
@@ -88,13 +107,23 @@
       </li>
     </ul>
   </div>
+                    <div style="float:right; padding:15px; width:100px; margin-right:20px;" >
+
+          <asp:Button ID="Button2" runat="server" Text="Connexion"  OnClick="redirect" PostBackUrl="~/Login.aspx" />
+    </div>
 </nav>
     </div>
  
+
+ 
     
      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
- 
-
+ <asp:Button ID="Button1"  Text="Button" runat="server"/> 
+         <asp:ConnectionsZone runat="server"></asp:ConnectionsZone>
         </asp:ContentPlaceHolder>
+ 
+  
+    </form>
+ 
 </body>
 </html>

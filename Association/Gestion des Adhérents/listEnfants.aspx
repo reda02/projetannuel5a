@@ -6,8 +6,7 @@
 
 
     
-    
-            <form method="post" runat="server">
+ 
 &nbsp;
  
    <div class="form-group">
@@ -51,11 +50,7 @@
 
 
 
-
-
-
-
-    </form>
+ 
 
 
 

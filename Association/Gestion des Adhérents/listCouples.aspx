@@ -4,8 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    
-            <form method="post" runat="server">
+ 
 &nbsp;
  
    <div class="form-group">
@@ -51,9 +50,6 @@
 
 
 
-
-
-
-    </form>
+     
 
 </asp:Content>

@@ -1,11 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pageMaitre/association.Master" AutoEventWireup="true" CodeBehind="rechercheAvecNumero.aspx.cs" Inherits="Association.Gestion_des_Adhérents.rechercheAvecNumero" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pageMaitre/association.Master" AutoEventWireup="true" CodeBehind="rechercheAderentNom.aspx.cs" Inherits="Association.Gestion_des_Adhérents.rechercheAderentNom" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
- 
-    <asp:Label ID="numeroArdherent" runat="server" Text="Numero adherent :"></asp:Label>
-    <asp:TextBox runat="server" ID="TextBoxnumeroArdherent"></asp:TextBox>
+
+
+     
+    <asp:Label ID="NomArdherent" runat="server" Text="Nom adherent :"></asp:Label>
+    <asp:TextBox runat="server" ID="TextBoxNomArdherent"></asp:TextBox>
     <asp:Button OnClick="Button1_Click" ID="Button1" runat="server" Text="Button" OnClientClick="Button1_Click" />
 
 
@@ -23,6 +25,4 @@
                  
                 </Columns>
             </asp:GridView>
- 
-
 </asp:Content>

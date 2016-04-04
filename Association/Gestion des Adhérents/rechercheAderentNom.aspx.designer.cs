@@ -7,37 +7,28 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace Association.pageMaitre {
+namespace Association.Gestion_des_Adhérents {
     
     
-    public partial class association {
+    public partial class rechercheAderentNom {
         
         /// <summary>
-        /// Contrôle head.
+        /// Contrôle NomArdherent.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label NomArdherent;
         
         /// <summary>
-        /// Contrôle Button2.
+        /// Contrôle TextBoxNomArdherent.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
-        
-        /// <summary>
-        /// Contrôle ContentPlaceHolder1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxNomArdherent;
         
         /// <summary>
         /// Contrôle Button1.
@@ -47,5 +38,14 @@ namespace Association.pageMaitre {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// Contrôle GridView1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

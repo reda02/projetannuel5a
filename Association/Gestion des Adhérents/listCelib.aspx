@@ -2,8 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-            <form method="post" runat="server">
+ 
  
 <input type="submit" value="Envoyer"/>
  
@@ -49,11 +48,6 @@
 
 
 
-
-
-
-
-    </form>
-
+ 
 
 </asp:Content>
